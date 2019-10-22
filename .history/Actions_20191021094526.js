@@ -148,6 +148,13 @@ export default class Actions extends React.Component {
           </Card>
 
           <Card style={{marginBottom: 10}}>
+            <Card.Title title="EC Sensor" subtitle="Last 3 hours values" />
+            <Card.Content style={{margin: 10}}>
+              <PureChart data={this.state.ecsensor_data} type="line" />
+            </Card.Content>
+          </Card>
+
+          <Card style={{marginBottom: 10}}>
             <Card.Title title="PH Sensor" subtitle="Last 3 hours values" />
             <Card.Content style={{margin: 10}}>
               <PureChart data={this.state.phsensor_data} type="line" />

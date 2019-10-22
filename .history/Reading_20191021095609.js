@@ -248,7 +248,9 @@ export default class Reading extends React.Component {
               </DataTable.Row>
 
               <DataTable.Row>
-                <DataTable.Cell>Nutrient Solution</DataTable.Cell>
+                <DataTable.Cell>
+                  Nutrient Solution Reservoir Sensor
+                </DataTable.Cell>
                 <DataTable.Cell numeric>
                   {this.state.Water_Level === null
                     ? 0
@@ -267,7 +269,6 @@ export default class Reading extends React.Component {
               marginTop: 20,
               marginLeft: 10,
               marginRight: 120,
-              fontSize: 12,
               marginBottom: 20,
               backgroundColor: 'red',
             }}
@@ -283,7 +284,6 @@ export default class Reading extends React.Component {
               marginTop: 20,
               marginLeft: 10,
               marginRight: 120,
-              fontSize: 12,
               marginBottom: 20,
               backgroundColor: '#d742f5',
             }}
@@ -302,11 +302,10 @@ export default class Reading extends React.Component {
               marginLeft: 10,
               marginRight: 120,
               marginBottom: 20,
-              fontSize: 12,
               backgroundColor: 'red',
             }}
             onPress={() => this.regulateWaterPump('off')}>
-            Turn OFF Pump
+            Turn off Water Pump
           </Button>
         ) : (
           <Button
@@ -318,11 +317,10 @@ export default class Reading extends React.Component {
               marginLeft: 10,
               marginRight: 120,
               marginBottom: 20,
-              fontSize: 12,
               backgroundColor: '#42f5b9',
             }}
             onPress={() => this.regulateWaterPump('on')}>
-            Irrigate Farm
+            Turn on Water Pump
           </Button>
         )}
 

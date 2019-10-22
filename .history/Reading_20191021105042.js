@@ -306,7 +306,7 @@ export default class Reading extends React.Component {
               backgroundColor: 'red',
             }}
             onPress={() => this.regulateWaterPump('off')}>
-            Turn OFF Pump
+            Turn off Water Pump
           </Button>
         ) : (
           <Button
@@ -322,7 +322,7 @@ export default class Reading extends React.Component {
               backgroundColor: '#42f5b9',
             }}
             onPress={() => this.regulateWaterPump('on')}>
-            Irrigate Farm
+            Turn on Water Pump
           </Button>
         )}
 
